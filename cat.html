@@ -1,573 +1,618 @@
 <!doctype html>
 <html lang="ca">
-<head>
-  <meta charset="utf-8" />
-  <title>Joel Rojas Llauradó - Currículum</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <head>
+    <meta charset="utf-8" />
+    <title>Joel Rojas Llauradó - Currículum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-  <!-- === SEO basic === -->
-  <meta name="description" content="Currículum de Joel Rojas Llauradó - Estudiant d'Enginyeria Aeroespacial i Telemàtica (especialització en Aeroports). Experiència en entorns aeroportuaris i portuaris, orientació al client." />
-  <link rel="canonical" href="https://example.com/cat.html" />
+    <!-- === SEO basic === -->
+    <meta
+      name="description"
+      content="Currículum de Joel Rojas Llauradó - Estudiant d'Enginyeria Aeroespacial i Telemàtica (especialització en Aeroports). Experiència en entorns aeroportuaris i portuaris, orientació al client."
+    />
+    <link rel="canonical" href="https://example.com/index.html" />
 
-  <!-- === Open Graph / Social === -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Joel Rojas Llauradó - Currículum" />
-  <meta property="og:description" content="Estudiant d'Enginyeria Aeroespacial i Telemàtica (especialització en Aeroports). Experiència en entorns aeroportuaris i portuaris." />
-  <meta property="og:url" content="https://example.com/cat.html" />
-  <meta property="og:image" content="https://example.com/resources/banner.jpeg" />
+    <!-- === Open Graph / Social === -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Joel Rojas Llauradó - Currículum" />
+    <meta
+      property="og:description"
+      content="Estudiant d'Enginyeria Aeroespacial i Telemàtica (especialització en Aeroports). Experiència en entorns aeroportuaris i portuaris."
+    />
+    <meta property="og:url" content="https://example.com/index.html" />
+    <meta property="og:image" content="https://example.com/resources/banner.jpeg" />
 
-  <!-- === Twitter cards === -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Joel Rojas Llauradó - Currículum" />
-  <meta name="twitter:description" content="Estudiant d'Enginyeria Aeroespacial i Telemàtica (especialització en Aeroports). Experiència en entorns aeroportuaris i portuaris." />
-  <meta name="twitter:image" content="https://example.com/resources/banner.jpeg" />
+    <!-- === Twitter cards === -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Joel Rojas Llauradó - Currículum" />
+    <meta
+      name="twitter:description"
+      content="Estudiant d'Enginyeria Aeroespacial i Telemàtica (especialització en Aeroports). Experiència en entorns aeroportuaris i portuaris."
+    />
+    <meta name="twitter:image" content="https://example.com/resources/banner.jpeg" />
 
-  <style>
-    :root{
-      --bg:#f6f7fb;
-      --card:#ffffff;
-      --text:#0f172a;
-      --muted:#475569;
-      --line:rgba(15,23,42,.10);
-      --accent:#2563eb;
-      --shadow:0 10px 24px rgba(15,23,42,.08);
-      --radius:16px;
-      --max:980px;
-      --soft:#fafafa;
-    }
-
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-      background: var(--bg);
-      color:var(--text);
-      line-height:1.5;
-    }
-    a{color:inherit;text-decoration:none}
-
-    /* ===== Banner (CHANGE 1: fixed for stability) ===== */
-    .top-banner{
-      position:fixed;
-      top:0; left:0;
-      width:100%;
-      height:200px;
-      background:url("resources/banner.jpeg") center/cover no-repeat;
-      z-index:0;
-    }
-    @media(min-width:860px){
-      .top-banner{ height:260px; }
-    }
-
-    /* ===== Language switch ===== */
-    .lang-switch{
-      position:fixed;
-      top:12px; right:12px;
-      background:rgba(255,255,255,.85);
-      backdrop-filter:blur(10px);
-      border:1px solid var(--line);
-      padding:8px 12px;
-      border-radius:999px;
-      font-size:13px;
-      font-weight:700;
-      z-index:10;
-    }
-    .lang-switch a{ margin:0 4px; color:var(--muted); }
-    .lang-switch a.active{ color:var(--accent); }
-    .lang-switch span{ color:#999; }
-
-    /* ===== Layout ===== */
-    .wrap{
-      max-width:var(--max);
-      margin:0 auto 40px;
-      padding:0 14px 28px;
-      position:relative;
-      z-index:1;
-    }
-
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:16px;
-      box-shadow:var(--shadow);
-    }
-
-    /* ===== Hero ===== */
-    .hero{
-      display:grid;
-      grid-template-columns:76px 1fr;
-      gap:14px;
-      margin-top:130px;
-      box-shadow:0 20px 40px rgba(15,23,42,.12);
-    }
-    @media(min-width:860px){
-      .hero{
-        grid-template-columns:96px 1fr;
-        margin-top:170px;
+    <style>
+      :root{
+        --bg:#f6f7fb;
+        --card:#ffffff;
+        --text:#0f172a;
+        --muted:#475569;
+        --line:rgba(15,23,42,.10);
+        --accent:#2563eb;
+        --shadow:0 10px 24px rgba(15,23,42,.08);
+        --radius:16px;
+        --max:980px;
+        --soft:#fafafa;
       }
-    }
 
-    .avatar{
-      width:76px; height:76px;
-      border-radius:16px;
-      overflow:hidden;
-      border:1px solid var(--line);
-      background:#fff;
-    }
-    @media(min-width:860px){
-      .avatar{ width:96px; height:96px; }
-    }
-    .avatar img{
-      width:100%; height:100%;
-      object-fit:cover;
-      display:block;
-    }
+      *{box-sizing:border-box}
+      body{
+        margin:0;
+        font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+        background: var(--bg);
+        color:var(--text);
+        line-height:1.5;
+      }
+      a{color:inherit;text-decoration:none}
 
-    h1{ margin:0 0 6px; font-size:22px; line-height:1.15; }
-    @media(min-width:860px){ h1{ font-size:30px; } }
+      /* ===== Banner (CHANGE 1: fixed for stability) ===== */
+      .top-banner{
+        position:fixed;
+        top:0; left:0;
+        width:100%;
+        height:200px;
+        background:url("resources/banner.jpeg") center/cover no-repeat;
+        z-index:0;
+      }
+      @media(min-width:860px){
+        .top-banner{ height:260px; }
+      }
 
-    .role{
-      margin:0 0 10px;
-      color:var(--muted);
-      font-weight:700;
-      font-size:14px;
-    }
-    .summary{ margin:0; font-size:14px; }
+      /* ===== Language switch ===== */
+      .lang-switch{
+        position:fixed;
+        top:12px; right:12px;
+        background:rgba(255,255,255,.85);
+        backdrop-filter:blur(10px);
+        border:1px solid var(--line);
+        padding:8px 12px;
+        border-radius:999px;
+        font-size:13px;
+        font-weight:700;
+        z-index:10;
+      }
+      .lang-switch a{ margin:0 4px; color:var(--muted); }
+      .lang-switch a.active{ color:var(--accent); }
+      .lang-switch span{ color:#999; }
 
-    main{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:14px;
-      margin-top:14px;
-    }
+      /* ===== Layout ===== */
+      .wrap{
+        max-width:var(--max);
+        margin:0 auto 40px;
+        padding:0 14px 28px;
+        position:relative;
+        z-index:1;
+      }
 
-    h2{
-      margin:0 0 10px;
-      font-size:15px;
-      letter-spacing:.2px;
-    }
+      .card{
+        background:var(--card);
+        border:1px solid var(--line);
+        border-radius:var(--radius);
+        padding:16px;
+        box-shadow:var(--shadow);
+      }
 
-    /* ===== Contact ===== */
-    .contact{
-      display:grid;
-      gap:10px;
-    }
-    .contact a{
-      padding:10px 12px;
-      border:1px solid var(--line);
-      border-radius:14px;
-      background:var(--soft);
-      display:flex;
-      align-items:center;
-      gap:10px;
-      font-size:14px;
-    }
+      /* ===== Hero ===== */
+      .hero{
+        display:grid;
+        grid-template-columns:76px 1fr;
+        gap:14px;
+        margin-top:130px;
+        box-shadow:0 20px 40px rgba(15,23,42,.12);
+      }
+      @media(min-width:860px){
+        .hero{
+          grid-template-columns:96px 1fr;
+          margin-top:170px;
+        }
+      }
 
-    /* ===== Items ===== */
-    .item{
-      padding-top:12px;
-      margin-top:12px;
-      border-top:1px solid var(--line);
-    }
-    .item:first-child{
-      margin-top:0;
-      padding-top:0;
-      border-top:none;
-    }
+      .avatar{
+        width:76px; height:76px;
+        border-radius:16px;
+        overflow:hidden;
+        border:1px solid var(--line);
+        background:#fff;
+      }
+      @media(min-width:860px){
+        .avatar{ width:96px; height:96px; }
+      }
+      .avatar img{
+        width:100%; height:100%;
+        object-fit:cover;
+        display:block;
+      }
 
-    .row{
-      display:grid;
-      grid-template-columns:44px 1fr;
-      gap:12px;
-      align-items:start;
-    }
+      h1{ margin:0 0 6px; font-size:22px; line-height:1.15; }
+      @media(min-width:860px){ h1{ font-size:30px; } }
 
-    .logo-slot{
-      width:44px; height:44px;
-      border-radius:12px;
-      border:1px solid rgba(15,23,42,.12);
-      background:#fff;
-      display:grid;
-      place-items:center;
-      overflow:hidden;
-    }
-    .logo-slot img{
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      padding:6px;
-      display:block;
-    }
+      .role{
+        margin:0 0 10px;
+        color:var(--muted);
+        font-weight:700;
+        font-size:14px;
+      }
+      .summary{ margin:0; font-size:14px; }
 
-    .toprow{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:10px;
-    }
+      main{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:14px;
+        margin-top:14px;
+      }
 
-    .title{ font-weight:900; }
-    .meta{ font-size:13px; font-weight:700; color:var(--muted); margin:4px 0; }
-    .where{ font-size:13px; color:var(--muted); margin-top:4px; }
+      h2{
+        margin:0 0 10px;
+        font-size:15px;
+        letter-spacing:.2px;
+      }
 
-    /* Right-aligned stacked dates (for 4R) */
-    .date-stack{
-      display:flex;
-      flex-direction:column;
-      align-items:flex-end;
-      text-align:right;
-      gap:2px;
-      font-size:13px;
-      color:var(--muted);
-      white-space:nowrap;
-      padding-top:1px;
-    }
+      /* ===== Contact ===== */
+      .contact{
+        display:grid;
+        gap:10px;
+      }
+      .contact a{
+        padding:10px 12px;
+        border:1px solid var(--line);
+        border-radius:14px;
+        background:var(--soft);
+        display:flex;
+        align-items:center;
+        gap:10px;
+        font-size:14px;
+      }
 
-    /* Responsibilities in a grey box (like email cards) */
-    .detail-box{
-      margin-top:10px;
-      padding:10px 12px;
-      border:1px solid var(--line);
-      border-radius:14px;
-      background:var(--soft);
-    }
-    .detail-box ul{
-      margin:0 0 0 18px;
-      padding:0;
-    }
-    .detail-box li{ margin:6px 0; }
+      /* ===== Items ===== */
+      .item{
+        padding-top:12px;
+        margin-top:12px;
+        border-top:1px solid var(--line);
+      }
+      .item:first-child{
+        margin-top:0;
+        padding-top:0;
+        border-top:none;
+      }
 
-    /* ===== Languages + Skills ALWAYS side-by-side ===== */
-    .two-col{
-      display:grid;
-      grid-template-columns: 1fr 1fr; /* always two columns */
-      gap:14px;
-    }
-    @media(max-width:360px){
-      .two-col{ grid-template-columns: 1fr; }
-    }
+      .row{
+        display:grid;
+        grid-template-columns:44px 1fr;
+        gap:12px;
+        align-items:start;
+      }
 
-    .tags{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top:6px;
-    }
-    .tag{
-      padding:7px 10px;
-      border-radius:999px;
-      font-size:13px;
-      border:1px solid var(--line);
-      background:var(--soft);
-      color:var(--text);
-      font-weight:700;
-    }
+      .logo-slot{
+        width:44px; height:44px;
+        border-radius:12px;
+        border:1px solid rgba(15,23,42,.12);
+        background:#fff;
+        display:grid;
+        place-items:center;
+        overflow:hidden;
+      }
+      .logo-slot img{
+        width:100%;
+        height:100%;
+        object-fit:contain;
+        padding:6px;
+        display:block;
+      }
 
-    footer{
-      text-align:center;
-      font-size:12px;
-      color:var(--muted);
-      margin-top:16px;
-    }
+      .toprow{
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        gap:10px;
+      }
 
-    /* ===== CHANGE 4: Reduced motion support ===== */
-    @media (prefers-reduced-motion: reduce){
-      * { scroll-behavior:auto; }
-    }
-  </style>
-</head>
+      .title{ font-weight:900; }
+      .meta{ font-size:13px; font-weight:700; color:var(--muted); margin:4px 0; }
+      .where{ font-size:13px; color:var(--muted); margin-top:4px; }
 
-<body>
+      /* Right-aligned stacked dates (for 4R) */
+      .date-stack{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-end;
+        text-align:right;
+        gap:2px;
+        font-size:13px;
+        color:var(--muted);
+        white-space:nowrap;
+        padding-top:1px;
+      }
 
-  <div class="top-banner" aria-hidden="true"></div>
+      /* Responsibilities in a grey box (like email cards) */
+      .detail-box{
+        margin-top:10px;
+        padding:10px 12px;
+        border:1px solid var(--line);
+        border-radius:14px;
+        background:var(--soft);
+      }
+      .detail-box ul{
+        margin:0 0 0 18px;
+        padding:0;
+      }
+      .detail-box li{ margin:6px 0; }
 
-  <div class="lang-switch">
-    <a href="index.html">EN</a>
-    <span>|</span>
-    <a href="es.html">ES</a>
-    <span>|</span>
-    <a href="cat.html" class="active">CAT</a>
-  </div>
+      /* ===== Languages + Skills ALWAYS side-by-side ===== */
+      .two-col{
+        display:grid;
+        grid-template-columns: 1fr 1fr; /* always two columns */
+        gap:14px;
+      }
+      @media(max-width:360px){
+        .two-col{ grid-template-columns: 1fr; }
+      }
 
-  <div class="wrap">
+      .tags{
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px;
+        margin-top:6px;
+      }
+      .tag{
+        padding:7px 10px;
+        border-radius:999px;
+        font-size:13px;
+        border:1px solid var(--line);
+        background:var(--soft);
+        color:var(--text);
+        font-weight:700;
+      }
 
-    <!-- Presentation -->
-    <section class="card hero">
-      <div class="avatar">
-        <img src="resources/profile.jpg" alt="Joel Rojas Llauradó">
-      </div>
-      <div>
-        <h1>Joel Rojas Llauradó</h1>
-        <p class="role">Estudiant d'Enginyeria Aeroespacial i Telemàtica · Especialització en Aeroports</p>
-        <p class="summary">
-          Estudiant de doble grau en Enginyeria de Sistemes Aeroespacials i Enginyeria Telemàtica a la UPC.
-          Perfil organitzat, responsable i comunicatiu, amb experiència en entorns aeroportuaris i portuaris
-          i una forta orientació al servei al client.
-        </p>
-      </div>
-    </section>
+      footer{
+        text-align:center;
+        font-size:12px;
+        color:var(--muted);
+        margin-top:16px;
+      }
 
-    <main>
+      /* ===== CHANGE 4: Reduced motion support ===== */
+      @media (prefers-reduced-motion: reduce){
+        * { scroll-behavior:auto; }
+      }
+    </style>
+  </head>
 
-      <!-- Contact -->
-      <section class="card">
-        <h2>Contacte</h2>
-        <div class="contact">
-          <a href="mailto:joelrojasllaurado@gmail.com" aria-label="Envia un correu a Joel a joelrojasllaurado@gmail.com">
-            📧 joelrojasllaurado@gmail.com
-          </a>
-          <a href="mailto:joel.rojas@estudiantat.upc.edu" aria-label="Envia un correu a Joel a joel.rojas@estudiantat.upc.edu">
-            📧 joel.rojas@estudiantat.upc.edu
-          </a>
+  <body>
+    <div class="top-banner" aria-hidden="true"></div>
 
-          <a href="https://www.linkedin.com/in/joel-rojas-llauradó/" target="_blank" rel="noreferrer">💼 LinkedIn</a>
-          <a href="https://linktr.ee/joelrojasllaurado" target="_blank" rel="noreferrer">🔗 Portafoli</a>
-        </div>
-      </section>
-
-      <!-- Education -->
-      <section class="card">
-        <h2>Formació</h2>
-
-        <article class="item">
-          <div class="row">
-            <div class="logo-slot"><img src="resources/logos/upc.png" alt="Logotip de la UPC"></div>
-            <div>
-              <div class="toprow">
-                <div class="title">Doble Grau en Enginyeria de Sistemes Aeroespacials &amp; Enginyeria Telemàtica</div>
-                <div class="where">2022 - Actualitat</div>
-              </div>
-              <div class="meta">Especialització: Aeroports</div>
-              <div class="where">Universitat Politècnica de Catalunya (UPC) · Castelldefels</div>
-            </div>
-          </div>
-        </article>
-
-        <article class="item">
-          <div class="row">
-            <div class="logo-slot"><img src="resources/logos/ib.png" alt="Logotip de l'IB"></div>
-            <div>
-              <div class="toprow">
-                <div class="title">Batxillerat Internacional</div>
-                <div class="where">2020 - 2022</div>
-              </div>
-              <div class="meta">Modalitat científica</div>
-              <div class="where">Institut Gabriel Ferrater i Soler · Reus</div>
-            </div>
-          </div>
-        </article>
-
-        <article class="item">
-          <div class="row">
-            <div class="logo-slot"><img src="resources/logos/ensenyament.png" alt="Logotip d'Ensenyament / LOMLOE"></div>
-            <div>
-              <div class="toprow">
-                <div class="title">Batxillerat</div>
-                <div class="where">2020 - 2022</div>
-              </div>
-              <div class="meta">Modalitat científica</div>
-              <div class="where">Institut Gabriel Ferrater i Soler · Reus</div>
-            </div>
-          </div>
-        </article>
-
-        <article class="item">
-          <div class="row">
-            <div class="logo-slot"><img src="resources/logos/elisabeth.png" alt="Logotip d'Escola Elisabeth"></div>
-            <div>
-              <div class="toprow">
-                <div class="title">Educació Secundària Obligatòria (ESO)</div>
-                <div class="where">2016 - 2020</div>
-              </div>
-              <div class="where">Escola Elisabeth · Salou</div>
-            </div>
-          </div>
-        </article>
-
-      </section>
-
-      <!-- Experience -->
-      <section class="card">
-        <h2>Experiència</h2>
-
-        <article class="item">
-          <div class="row">
-            <div class="logo-slot"><img src="resources/logos/upc.png" alt="Logotip de la UPC"></div>
-            <div>
-              <div class="toprow">
-                <div class="title">Secretari – Delegació d'Estudiants (EETAC)</div>
-                <div class="where">Nov 2024 - Actualitat</div>
-              </div>
-              <div class="where">Universitat Politècnica de Catalunya · Castelldefels</div>
-              <div class="detail-box">
-                <ul>
-                  <li>Gestió administrativa i organització de la documentació interna.</li>
-                  <li>Redacció de normatives, informes i protocols interns.</li>
-                  <li>Coordinació amb equips de direcció per millorar l'entorn acadèmic.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="item">
-          <div class="row">
-            <div class="logo-slot"><img src="resources/logos/global.jpg" alt="Logotip de Global Exchange"></div>
-            <div>
-              <div class="toprow">
-                <div class="title">Assessor</div>
-                <div class="where">Jul 2024 - Sep 2024</div>
-              </div>
-              <div class="where">Global Exchange · Aeroport de Barcelona</div>
-              <div class="detail-box">
-                <ul>
-                  <li>Atenció al client en operacions de canvi de divises i tax-free.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="item">
-          <div class="row">
-            <div class="logo-slot"><img src="resources/logos/shef.jpg" alt="Logotip de Shef"></div>
-            <div>
-              <div class="toprow">
-                <div class="title">Assistent de M&amp;G</div>
-                <div class="where">Jul 2022 - Jun 2024</div>
-              </div>
-              <div class="where">Shef Ports · Tarragona &amp; Barcelona</div>
-              <div class="detail-box">
-                <ul>
-                  <li>Assistència als passatgers durant el check-in, embarcament, desembarcament i gestió d'equipatge en terminals de creuers.</li>
-                  <li>Verificació de documentació de viatge i compliment de restriccions de mobilitat.</li>
-                  <li>Resolució de conflictes i coordinació amb navilieres per mantenir les operacions amb normalitat.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="item">
-  <div class="row">
-    <div class="logo-slot">
-      <img src="resources/logos/4r.png" alt="Logotip de 4R Hotels">
+    <div class="lang-switch">
+      <a href="index.html" class="active">EN</a>
+      <span>|</span>
+      <a href="es.html">ES</a>
+      <span>|</span>
+      <a href="cat.html">CAT</a>
     </div>
-    <div>
-      <div class="toprow">
-        <div class="title-block">
-          <div class="title">Cambrer</div>
-          <div class="where">4R Hotels · Salou</div>
+
+    <div class="wrap">
+      <!-- Presentation -->
+      <section class="card hero">
+        <div class="avatar">
+          <img src="resources/profile.jpg" alt="Joel Rojas Llauradó" />
         </div>
-
-        <div class="date-stack" aria-label="Períodes d'ocupació">
-          <span>Jun 2025 — Sep 2025</span>
-          <span>Jun 2023 — Sep 2023</span>
-          <span>Jun 2022 — Sep 2022</span>
+        <div>
+          <h1>Joel Rojas Llauradó</h1>
+          <p class="role">Estudiant d'Enginyeria Aeroespacial i Telemàtica · Especialització en Aeroports</p>
+          <p class="summary">
+            Estudiant de doble grau en Enginyeria de Sistemes Aeroespacials i Enginyeria Telemàtica a la UPC.
+            Perfil organitzat, responsable i comunicatiu, amb experiència en entorns aeroportuaris i portuaris
+            i una forta orientació al servei al client.
+          </p>
         </div>
-      </div>
-    </div>
-  </div>
-</article>
-
-
       </section>
 
-      <!-- Languages + Skills -->
-      <section class="two-col">
+      <main>
+        <!-- Contact -->
         <section class="card">
-          <h2>Idiomes</h2>
-          <div class="detail-box" style="margin-top:6px">
-            <ul>
-              <li>Alemany - B1</li>
-              <li>Anglès - B2</li>
-              <li>Català - Natiu</li>
-              <li>Espanyol - Natiu</li>
-            </ul>
+          <h2>Contacte</h2>
+          <div class="contact">
+            <a href="mailto:joelrojasllaurado@gmail.com" aria-label="Envia un correu a Joel a joelrojasllaurado@gmail.com">
+              📧 joelrojasllaurado@gmail.com
+            </a>
+            <a href="mailto:joel.rojas@estudiantat.upc.edu" aria-label="Envia un correu a Joel a joel.rojas@estudiantat.upc.edu">
+              📧 joel.rojas@estudiantat.upc.edu
+            </a>
+
+            <a href="https://www.linkedin.com/in/joel-rojas-llauradó/" target="_blank" rel="noreferrer">💼 LinkedIn</a>
+            <a href="https://linktr.ee/joelrojasllaurado" target="_blank" rel="noreferrer">🔗 Portafoli</a>
           </div>
         </section>
 
+        <!-- Education -->
         <section class="card">
-          <h2>Habilitats</h2>
-          <div class="detail-box" style="margin-top:6px">
-            <div class="tags" aria-label="Habilitats de programari">
-              <span class="tag">C</span>
-              <span class="tag">C#</span>
-              <span class="tag">Python</span>
-              <span class="tag">MATLAB</span>
-              <span class="tag">SolidWorks</span>
+          <h2>Formació</h2>
+
+          <article class="item">
+            <div class="row">
+              <div class="logo-slot"><img src="resources/logos/upc.png" alt="Logotip de la UPC" /></div>
+              <div>
+                <div class="toprow">
+                  <div class="title">Doble Grau en Enginyeria de Sistemes Aeroespacials &amp; Enginyeria Telemàtica</div>
+                  <div class="where">2022 - Actualitat</div>
+                </div>
+                <div class="meta">Especialització: Aeroports</div>
+                <div class="where">Universitat Politècnica de Catalunya (UPC) · Castelldefels</div>
+              </div>
             </div>
-          </div>
+          </article>
+
+          <article class="item">
+            <div class="row">
+              <div class="logo-slot"><img src="resources/logos/ib.png" alt="Logotip de l'IB" /></div>
+              <div>
+                <div class="toprow">
+                  <div class="title">Batxillerat Internacional</div>
+                  <div class="where">2020 - 2022</div>
+                </div>
+                <div class="meta">Modalitat científica</div>
+                <div class="where">Institut Gabriel Ferrater i Soler · Reus</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="item">
+            <div class="row">
+              <div class="logo-slot">
+                <img src="resources/logos/ensenyament.png" alt="Logotip d'Ensenyament / LOMLOE" />
+              </div>
+              <div>
+                <div class="toprow">
+                  <div class="title">Batxillerat</div>
+                  <div class="where">2020 - 2022</div>
+                </div>
+                <div class="meta">Modalitat científica</div>
+                <div class="where">Institut Gabriel Ferrater i Soler · Reus</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="item">
+            <div class="row">
+              <div class="logo-slot"><img src="resources/logos/elisabeth.png" alt="Logotip d'Escola Elisabeth" /></div>
+              <div>
+                <div class="toprow">
+                  <div class="title">Educació Secundària Obligatòria (ESO)</div>
+                  <div class="where">2016 - 2020</div>
+                </div>
+                <div class="where">Escola Elisabeth · Salou</div>
+              </div>
+            </div>
+          </article>
         </section>
-      </section>
 
-      <!-- Volunteering -->
-      <section class="card">
-        <h2>Voluntariat</h2>
+        <!-- Experience -->
+        <section class="card">
+          <h2>Experiència</h2>
 
-        <article class="item">
-          <div class="row">
-            <div class="logo-slot"><img src="resources/logos/fll.png" alt="Logotip de First Lego League"></div>
-            <div>
-              <div class="toprow">
-                <div class="title">Àrbitre &amp; Avaluador del Projecte Científic</div>
-                <div class="where">2018 - Actualitat</div>
-              </div>
-              <div class="where">First Lego League Espanya</div>
-              <div class="detail-box">
-                <ul>
-                  <li>Àrbitre i avaluador del projecte científic en tornejos locals i finals nacionals.</li>
-                </ul>
+          <article class="item">
+            <div class="row">
+              <div class="logo-slot"><img src="resources/logos/upc.png" alt="Logotip de la UPC" /></div>
+              <div>
+                <div class="toprow">
+                  <div class="title">Secretari – Delegació d'Estudiants (EETAC)</div>
+                  <div class="where">Nov 2024 - Actualitat</div>
+                </div>
+                <div class="where">Universitat Politècnica de Catalunya · Castelldefels</div>
+                <div class="detail-box">
+                  <ul>
+                    <li>Gestió administrativa i organització de la documentació interna.</li>
+                    <li>Redacció de normatives, informes i protocols interns.</li>
+                    <li>Coordinació amb equips de direcció per millorar l'entorn acadèmic.</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-      </section>
-
-      <!-- Licenses & Certifications -->
-      <section class="card">
-        <h2>Llicències &amp; Certificacions</h2>
-
-        <article class="item">
-          <div class="row">
-            <div class="logo-slot"><img src="resources/logos/dgt.png" alt="Logotip de la DGT"></div>
-            <div>
-              <div class="toprow">
-                <div class="title">Permís de conduir B</div>
-                <div class="where">Desembre 2023</div>
+          <article class="item">
+            <div class="row">
+              <div class="logo-slot"><img src="resources/logos/global.jpg" alt="Logotip de Global Exchange" /></div>
+              <div>
+                <div class="toprow">
+                  <div class="title">Assessor</div>
+                  <div class="where">Jul 2024 - Sep 2024</div>
+                </div>
+                <div class="where">Global Exchange · Aeroport de Barcelona</div>
+                <div class="detail-box">
+                  <ul>
+                    <li>Atenció al client en operacions de canvi de divises i tax-free.</li>
+                  </ul>
+                </div>
               </div>
-              <div class="where">DGT</div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="item">
-          <div class="row">
-            <div class="logo-slot"><img src="resources/logos/globalia.webp" alt="Logotip de GLOBALIA Handling"></div>
-            <div>
-              <div class="toprow">
-                <div class="title">AVSAF-C</div>
-                <div class="where">Juny 2024</div>
+          <article class="item">
+            <div class="row">
+              <div class="logo-slot"><img src="resources/logos/shef.jpg" alt="Logotip de Shef" /></div>
+              <div>
+                <div class="toprow">
+                  <div class="title">Assistent de M&amp;G</div>
+                  <div class="where">Jul 2022 - Jun 2024</div>
+                </div>
+                <div class="where">Shef Ports · Tarragona &amp; Barcelona</div>
+                <div class="detail-box">
+                  <ul>
+                    <li>
+                      Assistència als passatgers durant el check-in, embarcament, desembarcament i gestió d'equipatge en terminals de creuers.
+                    </li>
+                    <li>Verificació de documentació de viatge i compliment de restriccions de mobilitat.</li>
+                    <li>Resolució de conflictes i coordinació amb navilieres per mantenir les operacions amb normalitat.</li>
+                  </ul>
+                </div>
               </div>
-              <div class="where">GLOBALIA Handling</div>
             </div>
-          </div>
-        </article>
+          </article>
 
-      </section>
+          <article class="item">
+            <div class="row">
+              <div class="logo-slot">
+                <img src="resources/logos/4r.png" alt="Logotip de 4R Hotels" />
+              </div>
+              <div>
+                <div class="toprow">
+                  <div class="title-block">
+                    <div class="title">Cambrer</div>
+                    <div class="where">4R Hotels · Salou</div>
+                  </div>
 
-      <footer>
-        © <span id="year"></span> Joel Rojas Llauradó
-      </footer>
+                  <div class="date-stack" aria-label="Períodes d'ocupació">
+                    <span>Jun 2025 - Sep 2025</span>
+                    <span>Jun 2023 - Sep 2023</span>
+                    <span>Jun 2022 - Sep 2022</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
 
-    </main>
-  </div>
+        <!-- Languages + Skills -->
+        <section class="two-col">
+          <section class="card">
+            <h2>Idiomes</h2>
+            <div class="detail-box" style="margin-top:6px">
+              <ul>
+                <li>Alemany - B1</li>
+                <li>Anglès - B2</li>
+                <li>Català - Natiu</li>
+                <li>Espanyol - Natiu</li>
+              </ul>
+            </div>
+          </section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+          <section class="card">
+            <h2>Skills</h2>
+            <div class="detail-box" style="margin-top:6px">
+              <!-- ===== SKILLS ===== -->
 
-</body>
+              <div style="display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-bottom:12px;">
+                <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--muted);">
+                  <span style="width:12px;height:12px;border-radius:999px;background:#2563eb;"></span>
+                  Aeroespacial
+                </div>
+                <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--muted);">
+                  <span style="width:12px;height:12px;border-radius:999px;background:#7c3aed;"></span>
+                  Telemàtica
+                </div>
+                <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--muted);">
+                  <span style="width:12px;height:12px;border-radius:999px;background:#16a34a;"></span>
+                  Soft skills
+                </div>
+              </div>
+
+              <div class="tags" aria-label="Software skills">
+                <span class="tag" data-type="hard" data-color="#2563eb">Carregant…</span>
+              </div>
+
+              <script>
+                const skillsWrap = document.querySelector('.tags[aria-label="Software skills"]');
+
+                fetch("skills.json")
+                  .then(r => {
+                    if (!r.ok) throw new Error("Error en carregar skills.json");
+                    return r.json();
+                  })
+                  .then(data => {
+                    skillsWrap.innerHTML = "";
+
+                    Object.values(data).forEach(group => {
+                      group.skills.forEach(skill => {
+                        const tag = document.createElement("span");
+                        tag.className = "tag";
+                        tag.textContent = skill;
+
+                        tag.style.borderColor = group.color;
+                        tag.style.color = group.color;
+
+                        skillsWrap.appendChild(tag);
+                      });
+                    });
+                  })
+                  .catch(() => {
+                    skillsWrap.innerHTML = '<span class="tag">Error en carregar -</span>';
+                  });
+              </script>
+            </div>
+          </section>
+        </section>
+
+        <!-- Volunteering -->
+        <section class="card">
+          <h2>Voluntariat</h2>
+
+          <article class="item">
+            <div class="row">
+              <div class="logo-slot"><img src="resources/logos/fll.png" alt="Logotip de First Lego League" /></div>
+              <div>
+                <div class="toprow">
+                  <div class="title">Àrbitre &amp; Avaluador del Projecte Científic</div>
+                  <div class="where">2018 - Actualitat</div>
+                </div>
+                <div class="where">First Lego League Espanya</div>
+                <div class="detail-box">
+                  <ul>
+                    <li>Àrbitre i avaluador del projecte científic en tornejos locals i finals nacionals.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- Licenses & Certifications -->
+        <section class="card">
+          <h2>Llicències &amp; Certificacions</h2>
+
+          <article class="item">
+            <div class="row">
+              <div class="logo-slot"><img src="resources/logos/dgt.png" alt="Logotip de la DGT" /></div>
+              <div>
+                <div class="toprow">
+                  <div class="title">Permís de conduir B</div>
+                  <div class="where">Desembre 2023</div>
+                </div>
+                <div class="where">DGT</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="item">
+            <div class="row">
+              <div class="logo-slot"><img src="resources/logos/globalia.webp" alt="Logotip de GLOBALIA Handling" /></div>
+              <div>
+                <div class="toprow">
+                  <div class="title">AVSAF-C</div>
+                  <div class="where">Juny 2024</div>
+                </div>
+                <div class="where">GLOBALIA Handling</div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <footer>
+          © <span id="year"></span> Joel Rojas Llauradó
+        </footer>
+      </main>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
