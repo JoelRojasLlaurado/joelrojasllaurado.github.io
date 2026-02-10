@@ -1,0 +1,49 @@
+{
+  "aero": {
+    "label": "Aerospace Engineering",
+    "color": "#2563eb",
+    "type": "hard",
+    "skills": [
+      "Airport Operations",
+      "Aviation Safety (AVSAF-C)",
+      "Airside & Landside Management",
+      "Passenger Handling",
+      "Airport Security Procedures",
+      "Operational Coordination",
+      "Safety Compliance"
+    ]
+  },
+
+  "tele": {
+    "label": "Telematics Engineering",
+    "color": "#7c3aed",
+    "type": "hard",
+    "skills": [
+      "Python",
+      "C",
+      "C#",
+      "MATLAB",
+      "Computer Networks",
+      "Telematics Systems",
+      "Network Protocols",
+      "Data Analysis",
+      "Technical Documentation"
+    ]
+  },
+
+  "soft": {
+    "label": "Professional Skills",
+    "color": "#16a34a",
+    "type": "soft",
+    "skills": [
+      "Customer Service",
+      "Effective Communication",
+      "Teamwork",
+      "Conflict Resolution",
+      "Stress Management",
+      "Organization & Planning",
+      "Adaptability",
+      "Responsibility"
+    ]
+  }
+}
