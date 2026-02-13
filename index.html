@@ -310,7 +310,7 @@
           <p class="summary">
             Double degree student in Aerospace Systems Engineering and Telematics Engineering at UPC.
             Organized, responsible and communicative profile, with experience in airport and port
-            environments and strong customer service orientation.
+            environments.
           </p>
         </div>
       </section>
@@ -319,6 +319,7 @@
         <!-- Contact -->
         <section class="card">
           <h2>Contact</h2>
+          <div style="margin:10px 0 14px; border-top:1px solid var(--line);"></div>
           <div class="contact">
             <a href="mailto:joelrojasllaurado@gmail.com" aria-label="Email Joel at joelrojasllaurado@gmail.com">
               📧 joelrojasllaurado@gmail.com
@@ -328,7 +329,6 @@
             </a>
 
             <a href="https://www.linkedin.com/in/joel-rojas-llauradó/" target="_blank" rel="noreferrer">💼 LinkedIn</a>
-            <a href="https://linktr.ee/joelrojasllaurado" target="_blank" rel="noreferrer">🔗 Portfolio</a>
           </div>
         </section>
 
@@ -485,6 +485,7 @@
         <section class="two-col">
           <section class="card">
             <h2>Languages</h2>
+            <div style="margin:10px 0 14px; border-top:1px solid var(--line);"></div>
             <div class="detail-box" style="margin-top:6px">
               <ul>
                 <li>German - B1</li>
@@ -497,6 +498,7 @@
 
           <section class="card">
             <h2>Skills</h2>
+            <div style="margin:10px 0 14px; border-top:1px solid var(--line);"></div>
             <div class="detail-box" style="margin-top:6px">
               <!-- ===== SKILLS ===== -->
 
@@ -576,9 +578,39 @@
 
         <!-- Licenses & Certifications -->
         <section class="card">
-          <h2>Licenses &amp; Certifications</h2>
+          <h2>Courses, Licenses &amp; Certifications </h2>
 
           <article class="item">
+              <div class="row">
+                <div class="logo-slot">
+                  <img src="resources/logos/aesa.webp" alt="Agencia Estatal de Seguridad Aérea logo" />
+                </div>
+                <div>
+                  <div class="toprow">
+                    <div class="title">AVSAF-C</div>
+                    <div class="where">June 2024</div>
+                  </div>
+                  <div class="where">Agencia Estatal de Seguridad Aérea</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="item">
+              <div class="row">
+                <div class="logo-slot">
+                  <img src="resources/logos/globalia.webp" alt="Globalia logo" />
+                </div>
+                <div>
+                  <div class="toprow">
+                    <div class="title">Airport Handling Coordination Course</div>
+                    <div class="where">June 2024</div>
+                  </div>
+                  <div class="where">Globalia</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="item">
             <div class="row">
               <div class="logo-slot"><img src="resources/logos/dgt.png" alt="DGT logo" /></div>
               <div>
@@ -586,24 +618,174 @@
                   <div class="title">Driving License B</div>
                   <div class="where">December 2023</div>
                 </div>
-                <div class="where">DGT</div>
+                <div class="where">Dirección General de Tráfico</div>
               </div>
             </div>
           </article>
 
-          <article class="item">
-            <div class="row">
-              <div class="logo-slot"><img src="resources/logos/globalia.webp" alt="GLOBALIA Handling logo" /></div>
-              <div>
-                <div class="toprow">
-                  <div class="title">AVSAF-C</div>
-                  <div class="where">June 2024</div>
-                </div>
-                <div class="where">GLOBALIA Handling</div>
-              </div>
-            </div>
-          </article>
+
         </section>
+
+        <!-- Projects -->
+<section class="card">
+  <h2>Projects</h2>
+  <div style="margin:10px 0 14px; border-top:1px solid var(--line);"></div>
+
+  <div class="projects-grid"></div>
+
+  <!-- View More Button -->
+  <div style="margin-top:16px; text-align:center;">
+    <a href="projects.html"
+       style="display:inline-block; padding:10px 18px; border-radius:999px; border:1px solid var(--accent); color:var(--accent); font-weight:700; font-size:14px;">
+      View More Projects
+    </a>
+  </div>
+
+  <!-- Responsive layout -->
+  <style>
+    .projects-grid{
+      display:grid;
+      gap:14px;
+      grid-template-columns:1fr;
+    }
+    @media (min-width: 860px){
+      .projects-grid{
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+
+  <!-- Dynamic loading + thumbnail carousel -->
+  <script>
+    const projectsGrid = document.querySelector('.projects-grid');
+
+    fetch("projects.json")
+      .then(r => {
+        if (!r.ok) throw new Error("Error loading projects.json");
+        return r.json();
+      })
+      .then(data => {
+        projectsGrid.innerHTML = "";
+
+        const mainProjects = ["main-1", "main-2", "main-3"];
+
+        mainProjects.forEach(id => {
+          const project = data.find(p => p.id === id);
+          if (!project) return;
+
+          const thumbnails = Array.isArray(project.thumbnail)
+            ? project.thumbnail.filter(Boolean)
+            : [project.thumbnail].filter(Boolean);
+
+          const card = document.createElement("a");
+          card.href = "resources/projects/files/" + project.pdf;
+          card.target = "_blank";
+          card.style.cssText = `
+            display:block;
+            border:1px solid var(--line);
+            border-radius:14px;
+            overflow:hidden;
+            background:var(--soft);
+            transition:transform .15s ease, box-shadow .15s ease;
+          `;
+
+          // --- Thumbnail area (supports carousel) ---
+          const thumbWrap = document.createElement("div");
+          thumbWrap.style.cssText = `
+            height:160px;
+            overflow:hidden;
+            position:relative;
+            background:#e5e7eb;
+          `;
+
+          const img = document.createElement("img");
+          img.alt = (project.title || "Project") + " thumbnail";
+          img.style.cssText = "width:100%; height:100%; object-fit:cover; display:block;";
+          img.src = thumbnails[0]
+            ? `resources/projects/thumbnails/${thumbnails[0]}`
+            : "";
+
+          thumbWrap.appendChild(img);
+
+          // Add arrows + auto-advance only if multiple thumbnails
+          if (thumbnails.length > 1) {
+            let idx = 0;
+
+            const btnBase = `
+              position:absolute;
+              top:50%;
+              transform:translateY(-50%);
+              width:34px;
+              height:34px;
+              border-radius:999px;
+              border:1px solid rgba(15,23,42,.12);
+              background:rgba(255,255,255,.85);
+              backdrop-filter:blur(8px);
+              display:grid;
+              place-items:center;
+              font-weight:900;
+              color:var(--muted);
+              cursor:pointer;
+              user-select:none;
+            `;
+
+            const prevBtn = document.createElement("button");
+            prevBtn.type = "button";
+            prevBtn.setAttribute("aria-label", "Previous image");
+            prevBtn.textContent = "‹";
+            prevBtn.style.cssText = btnBase + "left:10px;";
+
+            const nextBtn = document.createElement("button");
+            nextBtn.type = "button";
+            nextBtn.setAttribute("aria-label", "Next image");
+            nextBtn.textContent = "›";
+            nextBtn.style.cssText = btnBase + "right:10px;";
+
+            // Prevent arrows from opening the PDF when clicked
+            prevBtn.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              idx = (idx - 1 + thumbnails.length) % thumbnails.length;
+              img.src = `resources/projects/thumbnails/${thumbnails[idx]}`;
+            });
+
+            nextBtn.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              idx = (idx + 1) % thumbnails.length;
+              img.src = `resources/projects/thumbnails/${thumbnails[idx]}`;
+            });
+
+            thumbWrap.appendChild(prevBtn);
+            thumbWrap.appendChild(nextBtn);
+
+            // Auto-change every 5 seconds, loop to start
+            setInterval(() => {
+              idx = (idx + 1) % thumbnails.length;
+              img.src = `resources/projects/thumbnails/${thumbnails[idx]}`;
+            }, 5000);
+          }
+
+          // --- Text area ---
+          const body = document.createElement("div");
+          body.style.cssText = "padding:12px;";
+          body.innerHTML = `
+            <div style="font-weight:800; margin-bottom:6px;">${project.title || ""}</div>
+            <div style="font-size:14px; color:var(--muted);">
+              ${project.abstract || ""}
+            </div>
+          `;
+
+          card.appendChild(thumbWrap);
+          card.appendChild(body);
+          projectsGrid.appendChild(card);
+        });
+      })
+      .catch(() => {
+        projectsGrid.innerHTML = '<div class="tag">Error loading projects</div>';
+      });
+  </script>
+</section>
 
         <footer>
           © <span id="year"></span> Joel Rojas Llauradó

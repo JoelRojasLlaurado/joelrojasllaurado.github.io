@@ -5,7 +5,7 @@
     "type": "hard",
     "skills": [
       "Airport Operations",
-      "Aviation Safety (AVSAF-C)",
+      "Operational Safety",
       "Airside & Landside Management",
       "Passenger Handling",
       "Airport Security Procedures",
@@ -23,11 +23,11 @@
       "C",
       "C#",
       "MATLAB",
+      "MariaDB",
       "Computer Networks",
       "Telematics Systems",
       "Network Protocols",
-      "Data Analysis",
-      "Technical Documentation"
+      "Data Analysis"
     ]
   },
 
@@ -36,7 +36,6 @@
     "color": "#16a34a",
     "type": "soft",
     "skills": [
-      "Customer Service",
       "Effective Communication",
       "Teamwork",
       "Conflict Resolution",
