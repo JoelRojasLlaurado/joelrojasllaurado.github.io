@@ -2,12 +2,12 @@
   {
     "id": "main-1",
     "order": 1,
-    "title-en": "Airport Design",
-    "title-cat": "Disseny d'un aeroport",
-    "title-es": "Disenyo de un aeropuerto",
-    "abstract-en": "This project presents the conceptual design of a Code 2C regional airport tailored to the Bombardier Dash 8 Q300, developed in compliance with ICAO and IATA standards. It integrates a crossed-runway configuration, fully dimensioned airside infrastructure, and an optimised landside terminal ensuring 100% passenger flow segregation and operational efficiency...",
-    "abstract-cat": "encatala",
-    "abstract-es": "enespañol",
+    "titleen": "Airport Design",
+    "titlecat": "Disseny d'un aeroport",
+    "titlees": "Disenyo de un aeropuerto",
+    "abstracten": "This project presents the conceptual design of a Code 2C regional airport tailored to the Bombardier Dash 8 Q300, developed in compliance with ICAO and IATA standards. It integrates a crossed-runway configuration, fully dimensioned airside infrastructure, and an optimised landside terminal ensuring 100% passenger flow segregation and operational efficiency...",
+    "abstractcat": "encatala",
+    "abstractes": "enespañol",
     "thumbnail":["airport-design.png",
                 "airport-design-facilities.png",
                 "airport-design-fluxes.png",
@@ -17,16 +17,16 @@
   {
     "id": "main-2",
     "order": 1,
-    "title-en": "LHR Traffic Optimization",
-    "abstract-en": "D2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "titleen": "LHR Traffic Optimization",
+    "abstracten": "D2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "thumbnail":"lhr-traffic-optimization.png",
     "pdf": "lhr-traffic-optimization.pdf"
   },
   {
     "id": "main-3",
     "order": 1,
-    "title-en": "Project Title 1",
-    "abstract-en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "titleen": "Project Title 1",
+    "abstracten": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "thumbnail":"",
     "pdf": "example3.pdf"
   }
