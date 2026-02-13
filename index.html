@@ -703,7 +703,7 @@
           `;
 
           const img = document.createElement("img");
-          img.alt = (project.title-en || "Project") + " thumbnail";
+          img.alt = (project.titleen || "Project") + " thumbnail";
           img.style.cssText = "width:100%; height:100%; object-fit:cover; display:block;";
           img.src = thumbnails[0]
             ? `resources/projects/thumbnails/${thumbnails[0]}`
@@ -774,9 +774,9 @@
           const body = document.createElement("div");
           body.style.cssText = "padding:12px;";
           body.innerHTML = `
-            <div style="font-weight:800; margin-bottom:6px;">${project.title-en || ""}</div>
+            <div style="font-weight:800; margin-bottom:6px;">${project.titleen || ""}</div>
             <div style="font-size:14px; color:var(--muted);">
-              ${project.abstract-en || ""}
+              ${project.abstracten || ""}
             </div>
           `;
 
