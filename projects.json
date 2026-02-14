@@ -1,7 +1,7 @@
 [
   {
     "id": "main-1",
-    "order": 4,
+    "order": 1,
     "titleen": "Airport Design",
     "titlecat": "Disseny d'un aeroport",
     "titlees": "Disenyo de un aeropuerto",
@@ -16,7 +16,7 @@
   },
   {
     "id": "main-2",
-    "order": 3,
+    "order": 2,
     "titleen": "Comparative Assessment of ATFM Strategies During Capacity Reduction at LHR",
     "titlecat": "Avaluació Comparativa d’Estratègies ATFM Durant una Reducció de Capacitat a LHR",
     "titlees": "Evaluación Comparativa de Estrategias ATFM Durante una Reducción de Capacidad en LHR",
@@ -32,21 +32,7 @@
   },
   {
     "id": "main-3",
-    "order": 2,
-    "titleen": "Genetic Sectorization of the Barcelona FIR: Adaptive Airspace Optimization",
-    "titlecat": "Sectorització Genètica de la FIR de Barcelona: Optimització Adaptativa de l’Espai Aeri",
-    "titlees": "Sectorización Genética de la FIR de Barcelona: Optimización Adaptativa del Espacio Aéreo",
-    "abstracten": "This project develops an adaptive airspace sectorization model for the Barcelona FIR using Genetic Algorithms combined with Voronoi diagrams. By optimizing controller workload distribution based on airways intersections and traffic density constraints, the study explores both single-objective and multi-objective approaches to achieve balanced, efficient and computationally robust sector configurations...",
-    "abstractcat": "Aquest projecte desenvolupa un model adaptatiu de sectorització de l’espai aeri per al FIR de Barcelona utilitzant Algoritmes Genètics combinats amb diagrames de Voronoi. Mitjançant l’optimització de la distribució de la càrrega de treball dels controladors basada en les interseccions de rutes aèries i les restriccions de densitat de trànsit, l’estudi explora tant enfocaments d’optimització amb un sol objectiu com multiobjectiu per aconseguir configuracions de sectors equilibrades, eficients i computacionalment robustes...",
-    "abstractes": "Este proyecto desarrolla un modelo adaptativo de sectorización del espacio aéreo para el FIR de Barcelona utilizando Algoritmos Genéticos combinados con diagramas de Voronoi. Mediante la optimización de la distribución de la carga de trabajo de los controladores basada en las intersecciones de aerovías y las restricciones de densidad de tráfico, el estudio explora enfoques tanto de optimización monoobjetivo como multiobjetivo para lograr configuraciones sectoriales equilibradas, eficientes y computacionalmente robustas...",
-    "thumbnail":["ga-sectorization.png",
-                "ga-sectorization-genealogy.png",
-                "ga-sectorization-pareto.png"],
-    "pdf": "ga-sectorization.pdf"
-  },
-  {
-    "id": "n1",
-    "order": 1,
+    "order": 3,
     "titleen": "Genetic Sectorization of the Barcelona FIR: Adaptive Airspace Optimization",
     "titlecat": "Sectorització Genètica de la FIR de Barcelona: Optimització Adaptativa de l’Espai Aeri",
     "titlees": "Sectorización Genética de la FIR de Barcelona: Optimización Adaptativa del Espacio Aéreo",
