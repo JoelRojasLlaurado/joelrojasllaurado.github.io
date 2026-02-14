@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Joel Rojas Llauradó - Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <style>
+      :root{
+        --bg:#f6f7fb;
+        --card:#ffffff;
+        --text:#0f172a;
+        --muted:#475569;
+        --line:rgba(15,23,42,.10);
+        --accent:#2563eb;
+        --shadow:0 10px 24px rgba(15,23,42,.08);
+        --radius:16px;
+        --max:980px;
+        --soft:#fafafa;
+      }
+
+      *{box-sizing:border-box}
+      body{
+        margin:0;
+        font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+        background: var(--bg);
+        color:var(--text);
+        line-height:1.5;
+      }
+      a{color:inherit;text-decoration:none}
+
+      .top-banner{
+        position:fixed;
+        top:0; left:0;
+        width:100%;
+        height:200px;
+        background:url("resources/banner.jpeg") center/cover no-repeat;
+        z-index:0;
+      }
+      @media(min-width:860px){
+        .top-banner{ height:260px; }
+      }
+
+      .lang-switch{
+        position:fixed;
+        top:12px; right:12px;
+        background:rgba(255,255,255,.85);
+        backdrop-filter:blur(10px);
+        border:1px solid var(--line);
+        padding:8px 12px;
+        border-radius:999px;
+        font-size:13px;
+        font-weight:700;
+        z-index:10;
+      }
+      .lang-switch a{ margin:0 4px; color:var(--muted); }
+      .lang-switch a.active{ color:var(--accent); }
+      .lang-switch span{ color:#999; }
+
+      .wrap{
+        max-width:var(--max);
+        margin:0 auto 40px;
+        padding:0 14px 28px;
+        position:relative;
+        z-index:1;
+      }
+
+      .card{
+        background:var(--card);
+        border:1px solid var(--line);
+        border-radius:var(--radius);
+        padding:16px;
+        box-shadow:var(--shadow);
+      }
+
+      .hero{
+        display:grid;
+        grid-template-columns:76px 1fr;
+        gap:14px;
+        margin-top:130px;
+        box-shadow:0 20px 40px rgba(15,23,42,.12);
+      }
+      @media(min-width:860px){
+        .hero{
+          grid-template-columns:96px 1fr;
+          margin-top:170px;
+        }
+      }
+
+      .avatar{
+        width:76px; height:76px;
+        border-radius:16px;
+        overflow:hidden;
+        border:1px solid var(--line);
+        background:#fff;
+      }
+      @media(min-width:860px){
+        .avatar{ width:96px; height:96px; }
+      }
+      .avatar img{
+        width:100%; height:100%;
+        object-fit:cover;
+        display:block;
+      }
+
+      h1{ margin:0 0 6px; font-size:22px; line-height:1.15; }
+      @media(min-width:860px){ h1{ font-size:30px; } }
+
+      .role{
+        margin:0 0 10px;
+        color:var(--muted);
+        font-weight:700;
+        font-size:14px;
+      }
+      .summary{ margin:0; font-size:14px; }
+
+      main{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:14px;
+        margin-top:14px;
+      }
+
+      h2{
+        margin:0 0 10px;
+        font-size:15px;
+        letter-spacing:.2px;
+      }
+
+      /* Projects grid */
+      .projects-grid{
+        display:grid;
+        gap:14px;
+        grid-template-columns:1fr;
+      }
+      @media (min-width: 860px){
+        .projects-grid{
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .tag{
+        padding:7px 10px;
+        border-radius:999px;
+        font-size:13px;
+        border:1px solid var(--line);
+        background:var(--soft);
+        color:var(--text);
+        font-weight:700;
+        display:inline-block;
+      }
+
+      footer{
+        text-align:center;
+        font-size:12px;
+        color:var(--muted);
+        margin-top:16px;
+      }
+
+      @media (prefers-reduced-motion: reduce){
+        * { scroll-behavior:auto; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="top-banner" aria-hidden="true"></div>
+
+    <div class="lang-switch">
+      <a href="index.html" class="">EN</a>
+      <span>|</span>
+      <a href="es.html">ES</a>
+      <span>|</span>
+      <a href="cat.html">CAT</a>
+    </div>
+
+    <div class="wrap">
+      <!-- Presentation -->
+      <section class="card hero">
+        <div class="avatar">
+          <img src="resources/profile.jpg" alt="Joel Rojas Llauradó" />
+        </div>
+        <div>
+          <h1>Joel Rojas Llauradó</h1>
+          <p class="role">Aerospace &amp; Telematics Engineering Student · Airport Specialization</p>
+          <p class="summary">
+            Project portfolio: click on a project thumbnail to open the full PDF.
+          </p>
+        </div>
+      </section>
+
+      <main>
+        <!-- Projects -->
+        <section class="card">
+          <h2>Projects</h2>
+          <p style="margin:6px 0 10px; font-size:14px; color:var(--muted);">
+            Click on the image to view the full project document.
+          </p>
+          <div style="margin:10px 0 14px; border-top:1px solid var(--line);"></div>
+
+          <div class="projects-grid" aria-label="Projects list">
+            <span class="tag">Loading…</span>
+          </div>
+        </section>
+
+        <footer>
+          © <span id="year"></span> Joel Rojas Llauradó
+        </footer>
+      </main>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const projectsGrid = document.querySelector('.projects-grid');
+
+      fetch("projects.json")
+        .then(r => {
+          if (!r.ok) throw new Error("Error loading projects.json");
+          return r.json();
+        })
+        .then(data => {
+          projectsGrid.innerHTML = "";
+
+          // Render all projects in the order they appear in the JSON
+          data.forEach(project => {
+            const thumbnails = Array.isArray(project.thumbnail)
+              ? project.thumbnail.filter(Boolean)
+              : [project.thumbnail].filter(Boolean);
+
+            const card = document.createElement("a");
+            card.href = "resources/projects/files/" + project.pdf;
+            card.target = "_blank";
+            card.className = "project-card";
+            card.style.cssText = `
+              display:block;
+              border:1px solid var(--line);
+              border-radius:14px;
+              overflow:hidden;
+              background:var(--soft);
+              transition:transform .15s ease, box-shadow .15s ease;
+            `;
+
+            const thumbWrap = document.createElement("div");
+            thumbWrap.style.cssText = `
+              height:160px;
+              overflow:hidden;
+              position:relative;
+              background:#e5e7eb;
+            `;
+
+            const img = document.createElement("img");
+            img.alt = (project.title || "Project") + " thumbnail";
+            img.style.cssText = "width:100%; height:100%; object-fit:cover; display:block;";
+            img.src = thumbnails[0]
+              ? `resources/projects/thumbnails/${thumbnails[0]}`
+              : "";
+            thumbWrap.appendChild(img);
+
+            if (thumbnails.length > 1) {
+              let idx = 0;
+
+              const btnBase = `
+                position:absolute;
+                top:50%;
+                transform:translateY(-50%);
+                width:34px;
+                height:34px;
+                border-radius:999px;
+                border:1px solid rgba(15,23,42,.12);
+                background:rgba(255,255,255,.85);
+                backdrop-filter:blur(8px);
+                display:grid;
+                place-items:center;
+                font-weight:900;
+                color:var(--muted);
+                cursor:pointer;
+                user-select:none;
+              `;
+
+              const prevBtn = document.createElement("button");
+              prevBtn.type = "button";
+              prevBtn.setAttribute("aria-label", "Previous image");
+              prevBtn.textContent = "‹";
+              prevBtn.style.cssText = btnBase + "left:10px;";
+
+              const nextBtn = document.createElement("button");
+              nextBtn.type = "button";
+              nextBtn.setAttribute("aria-label", "Next image");
+              nextBtn.textContent = "›";
+              nextBtn.style.cssText = btnBase + "right:10px;";
+
+              prevBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                idx = (idx - 1 + thumbnails.length) % thumbnails.length;
+                img.src = `resources/projects/thumbnails/${thumbnails[idx]}`;
+              });
+
+              nextBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                idx = (idx + 1) % thumbnails.length;
+                img.src = `resources/projects/thumbnails/${thumbnails[idx]}`;
+              });
+
+              thumbWrap.appendChild(prevBtn);
+              thumbWrap.appendChild(nextBtn);
+
+              setInterval(() => {
+                idx = (idx + 1) % thumbnails.length;
+                img.src = `resources/projects/thumbnails/${thumbnails[idx]}`;
+              }, 5000);
+            }
+
+            const body = document.createElement("div");
+            body.style.cssText = "padding:12px;";
+            body.innerHTML = `
+              <div style="font-weight:800; margin-bottom:6px;">${project.title || ""}</div>
+              <div style="font-size:14px; color:var(--muted);">
+                ${project.abstracten || project.abstract || ""}
+              </div>
+            `;
+
+            card.appendChild(thumbWrap);
+            card.appendChild(body);
+            projectsGrid.appendChild(card);
+          });
+
+          if (!projectsGrid.children.length) {
+            projectsGrid.innerHTML = '<span class="tag">No projects found</span>';
+          }
+        })
+        .catch(() => {
+          projectsGrid.innerHTML = '<span class="tag">Error loading projects</span>';
+        });
+    </script>
+  </body>
+</html>
