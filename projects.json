@@ -2,9 +2,9 @@
   {
     "id": "main-1",
     "order": 1,
-    "titleen": "Airport Design",
-    "titlecat": "Disseny d'un aeroport",
-    "titlees": "Disenyo de un aeropuerto",
+    "titleen": "Modular Airside-Landside Airport Design Framework (2C)",
+    "titlecat": "Disseny Modular Airside–Landside d’un Aeroport (2C)",
+    "titlees": "Diseño Modular Airside–Landside de un Aeropuerto (2C)",
     "abstracten": "This project presents the conceptual design of a Code 2C regional airport tailored to the Bombardier Dash 8 Q300, developed in compliance with ICAO and IATA standards. It integrates a crossed-runway configuration, fully dimensioned airside infrastructure, and an optimised landside terminal ensuring 100% passenger flow segregation and operational efficiency...",
     "abstractcat": "Aquest projecte presenta el disseny conceptual d’un aeroport regional Codi 2C adaptat al Bombardier Dash 8 Q300, desenvolupat d’acord amb els estàndards de l’OACI i la IATA. Integra una configuració de pistes creuades, una infraestructura del costat aire completament dimensionada i una terminal del costat terra optimitzada que garanteix la segregació del 100% dels fluxos de passatgers i l’eficiència operativa...",
     "abstractes": "Este proyecto presenta el diseño conceptual de un aeropuerto regional Código 2C adaptado al Bombardier Dash 8 Q300, desarrollado conforme a los estándares de la OACI y la IATA. Integra una configuración de pistas cruzadas, una infraestructura del lado aire completamente dimensionada y una terminal del lado tierra optimizada que garantiza la segregación del 100% de los flujos de pasajeros y la eficiencia operativa...",
