@@ -43,5 +43,19 @@
                 "ga-sectorization-genealogy.png",
                 "ga-sectorization-pareto.png"],
     "pdf": "ga-sectorization.pdf"
+  },
+  {
+    "id": "lebl-1",
+    "order": 4,
+    "titleen": "CDO Feasibility and STAR-Constrained Arrival Sequencing Analysis at Barcelona-El Prat (LEBL)",
+    "titlecat": "Anàlisi de la Viabilitat dels CDO i de la Seqüenciació d’Arribades sota Restriccions STAR a Barcelona–El Prat (LEBL)",
+    "titlees": "Análisis de la Viabilidad de los CDO y de la Secuenciación de Llegadas bajo Restricciones STAR en Barcelona–El Prat (LEBL)",
+    "abstracten": "This project evaluates the feasibility of implementing Continuous Descent Operations (CDOs) at Barcelona-El Prat Airport (LEBL) through trajectory simulation and arrival sequencing analysis . A Python-based performance model, grounded in BADA aircraft data and ISA atmospheric conditions, is used to generate descent profiles and assess operational compatibility with existing STAR altitude constraints and runway 24R sequencing requirements...",
+    "abstractcat": "Aquest projecte avalua la viabilitat d’implementar Continuous Descent Operations (CDOs) a l’Aeroport de Barcelona–El Prat (LEBL) mitjançant la simulació de trajectòries i l’anàlisi de la seqüenciació d’arribades. Un model de rendiment desenvolupat en Python, basat en les dades d’aeronaus BADA i en les condicions atmosfèriques ISA, s’utilitza per generar perfils de descens i avaluar la compatibilitat operativa amb les restriccions d’altitud existents a les STAR i els requisits de seqüenciació de la pista 24R...",
+    "abstractes": "Este proyecto evalúa la viabilidad de implementar Continuous Descent Operations (CDOs) en el Aeropuerto de Barcelona–El Prat (LEBL) mediante la simulación de trayectorias y el análisis de la secuenciación de llegadas. Un modelo de rendimiento desarrollado en Python, basado en los datos de aeronaves BADA y en las condiciones atmosféricas ISA, se utiliza para generar perfiles de descenso y evaluar la compatibilidad operativa con las restricciones de altitud existentes en las STAR y los requisitos de secuenciación de la pista 24R...",
+    "thumbnail":["lebl-arrival-sequencing.png",
+                "lebl-arrival-sequencing-star.png",
+                "lebl-arrival-sequencing-scenario1.png"],
+    "pdf": "lebl-arrival-sequencing.pdf"
   }
 ]
